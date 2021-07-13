@@ -1,6 +1,9 @@
 * {
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 24px;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #main-doc {
@@ -8,11 +11,40 @@
     width: 80%;
 }
 
-navbar {
-    float: left;
-    width: 20%;
-}
 
 main section.main-section div, main section.main-section div code{
     margin-left: 20px;
+}
+
+nav {
+    position: fixed;
+    float: left;
+    width: 19%;
+    height: 100%;
+    border-right: 1px solid #00161666;
+}
+
+nav header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+nav ul li {
+    border-top: 1px solid #00161666;
+    border-bottom: 1px solid #00161666;
+    padding: 15px;
+    cursor: pointer;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration-line: none;
 }
